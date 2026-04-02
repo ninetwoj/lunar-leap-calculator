@@ -2,139 +2,191 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>평달과 윤달 완벽 가이드 - 유용한 계산기 소개</title>
+    <title>평달과 윤달 완벽 가이드: 정의, 풍습, FAQ 및 계산기 활용법</title>
     <style>
         .post-wrapper {
-            line-height: 1.8;
+            line-height: 1.9;
             color: #333;
             max-width: 850px;
             margin: 0 auto;
             padding: 20px;
             font-family: 'Pretendard', -apple-system, sans-serif;
         }
-        h1 { border-bottom: 3px solid #4CAF50; padding-bottom: 10px; color: #1a1a1a; }
-        h2 { color: #2e7d32; margin-top: 40px; border-left: 5px solid #4CAF50; padding-left: 15px; }
-        h3 { color: #444; margin-top: 30px; }
-        p { margin-bottom: 15px; }
+        h1 { border-bottom: 4px solid #4CAF50; padding-bottom: 12px; color: #1a1a1a; font-size: 2.2em; }
+        h2 { color: #2e7d32; margin-top: 45px; border-left: 6px solid #4CAF50; padding-left: 15px; font-size: 1.6em; }
+        h3 { color: #444; margin-top: 35px; font-size: 1.3em; background: #f1f8e9; padding: 5px 10px; border-radius: 5px; }
+        p { margin-bottom: 18px; }
         
-        /* 강조 박스 */
-        .highlight-box {
-            background-color: #f1f8e9;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 25px 0;
+        /* 포인트 박스 */
+        .info-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         /* 버튼 스타일 */
-        .btn-container { text-align: center; margin: 40px 0; }
+        .btn-container { text-align: center; margin: 50px 0; }
         .main-btn {
             background-color: #4CAF50;
             color: white !important;
-            padding: 18px 35px;
+            padding: 20px 40px;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 1.1em;
             display: inline-block;
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
-            transition: 0.3s;
+            box-shadow: 0 4px 20px rgba(76, 175, 80, 0.4);
+            transition: all 0.3s ease;
         }
-        .main-btn:hover { background-color: #388e3c; transform: scale(1.05); }
+        .main-btn:hover { background-color: #388e3c; transform: translateY(-3px); }
 
-        /* 리스트 스타일 */
-        .info-list { padding-left: 20px; }
-        .info-list li { margin-bottom: 10px; }
+        /* 테이블 스타일 */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background-color: #f5f5f5; color: #333; }
 
         /* FAQ 스타일 */
-        .faq-section { background-color: #f9f9f9; padding: 25px; border-radius: 15px; margin-top: 50px; }
-        .faq-item { margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 15px; }
-        .faq-q { font-weight: bold; color: #2e7d32; display: block; margin-bottom: 5px; }
-        .faq-a { color: #555; }
+        .faq-section { background-color: #f8f9fa; padding: 30px; border-radius: 15px; margin-top: 60px; border: 1px dashed #ccc; }
+        .faq-item { margin-bottom: 25px; }
+        .faq-q { font-weight: bold; color: #2e7d32; font-size: 1.1em; display: block; margin-bottom: 8px; }
+        .faq-q::before { content: "Q. "; }
+        .faq-a { color: #555; line-height: 1.7; display: block; padding-left: 20px; }
 
         /* 하단 푸터 박스 */
         .footer-cta {
-            background-color: #2c3e50;
+            background-color: #1b2631;
             color: white;
             text-align: center;
-            padding: 40px;
-            border-radius: 15px;
-            margin-top: 60px;
+            padding: 50px 30px;
+            border-radius: 20px;
+            margin-top: 80px;
         }
         .footer-btn {
-            background-color: #ffffff;
-            color: #2c3e50 !important;
-            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white !important;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: bold;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 25px;
+            transition: 0.2s;
         }
+        .footer-btn:hover { background-color: #45a049; }
     </style>
 </head>
 <body>
 
 <div class="post-wrapper">
-    <h1>📅 평달과 윤달의 차이, 왜 계산기가 필요할까요?</h1>
+    <h1>📅 평달과 윤달 완벽 가이드: 왜 확인이 필수일까요?</h1>
     
-    <p>우리 조상님들의 지혜가 담긴 음력에는 <strong>'평달'</strong>과 <strong>'윤달'</strong>이라는 독특한 체계가 있습니다.<br/>
-        집안의 대소사를 챙기다 보면 한 번쯤 들어보셨을 텐데요.<br/>
-        정확한 개념과 사용 사례를 정리해 드립니다.</p>
+    <p>중요한 집안 행사를 앞두고 달력을 보면 음력 날짜 옆에 괄호로 <strong>'윤'</strong>이라는 글자가 적힌 것을 본 적 있으실 겁니다.<br>
+        이 짧은 한 글자가 우리 생활에 미치는 영향은 생각보다 큽니다.
+        <br>오늘은 평달과 윤달의 깊이 있는 정보와 이를 쉽고 정확하게 판별하는 방법을 알려드립니다.</p>
 
-    <h2>1. 평달과 윤달의 정의</h2>
-    <p><strong>평달(Normal Month):</strong> 우리가 일상적으로 사용하는 음력의 달입니다.<br/>
-        한 달이 약 29.5일로, 1년 12개월을 합치면 약 354일이 됩니다.</p>
-    <p><strong>윤달(Leap Month):</strong> 양력(365일)과 음력(354일) 사이에는 매년 약 11일의 차이가 생깁니다.<br/>
-        이 차이가 3년 정도 쌓이면 계절이 어긋나게 되는데, 이를 바로잡기 위해 <strong>약 3년마다 한 번씩 끼워 넣는 '가짜 달'</strong>이 바로 윤달입니다.</p>
+    <h2>1. 깊이 있게 알아보는 평달과 윤달</h2>
+    
+    <h3>역법상의 정의</h3>
+    <p>음력은 달의 위상 변화를 기준으로 합니다.<br>
+        한 달은 29일 혹은 30일이며, 1년은 약 354일입니다.<br>
+        반면 우리가 사용하는 양력(태양력)은 1년이 365일이죠. 이 <strong>11일의 오차</strong>를 방치하면 몇 년 뒤엔 겨울에 추석을 지내야 할지도 모릅니다.<br>
+        이 간극을 메우기 위해 끼워 넣는 '보너스 달'이 바로 <strong>윤달</strong>입니다.</p>
 
-    <div class="highlight-box">
-        <strong>💡 왜 계산기가 필요한가요?</strong><br>
-        윤달은 매년 고정적으로 돌아오는 것이 아니라 복잡한 역법 계산이 필요합니다.
-        <br/>"올해가 윤달인가?"를 알기 위해 두꺼운 만세력을 뒤질 필요 없이, <strong>평달 윤달 계산기</strong>를 이용하면 클릭 한 번으로 정확한 날짜 확인이 가능합니다.
+    <h3>'무공월(無空月)'이라 불리는 이유</h3>
+    <p>민속학적으로 윤달은 '남는 달' 혹은 '하늘의 감시가 없는 달'이라고 해서 <strong>무공월</strong>이라 부릅니다.<br>
+        어떤 일을 해도 벌을 받지 않는 기간으로 여겨져 평소 조심스러웠던 큰일들을 치르는 풍습이 생겨났습니다.</p>
+
+    <div class="info-card">
+        <strong>💡 상당모아 계산기가 필요한 진짜 이유</strong><br>
+        윤달은 무조건 3년마다 오는 것이 아닙니다.<br>
+        19년에 7번이라는 복잡한 규칙과 24절기 중 중기(中氣)가 없는 달을 윤달로 정하는 '무중치윤법' 등 일반인이 계산하기엔 불가능에 가깝습니다.<br><br>
+        **평달/윤달**는 이러한 복잡한 천문 데이터를 기반으로 즉시 평달 여부를 알려주어 실수를 방지해 줍니다.
     </div>
 
-    <!-- 중간 버튼 -->
+    <!-- 중간 버튼 영역 -->
     <div class="btn-container">
         <a href="https://sangdammoa.com/calculator/lunar-leap" target="_blank" class="main-btn">
-            📅 평달 · 윤달 실시간 계산기 바로가기
+            📅 평달 · 윤달 실시간 판별기 (무료)
         </a>
     </div>
 
-    <h2>2. 평달/윤달 주요 사용 사례</h2>
-    <ul class="info-list">
-        <li><strong>이사 및 집 수리 (윤달 권장):</strong> 윤달은 '신들이 쉬는 달'이라 하여 손(귀신)이 없다고 믿었습니다.<br/>
-            그래서 이사나 리모델링을 하기에 최적의 시기로 꼽힙니다.</li>
-        <li><strong>제사 및 생일 (평달 기준):</strong> 조상님을 기리는 제사나 본인의 생일은 실제 태어나거나 돌아가신 날인 '평달'을 기준으로 챙기는 것이 관례입니다.</li>
-        <li><strong>부모님 수의 제작:</strong> 윤달에 부모님의 수의를 미리 준비하면 무병장수하신다는 풍습이 있어 여전히 많은 분이 윤달을 기다려 준비합니다.</li>
-    </ul>
+    <h2>2. 생활 속 평달 vs 윤달 활용법</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>윤달에 추천하는 일</th>
+                <th>평달에 해야 하는 일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>이사/집수리</strong></td>
+                <td>최적 (손 없는 날의 확장판)</td>
+                <td>일반적인 이사 날짜 고려</td>
+            </tr>
+            <tr>
+                <td><strong>제사/생일</strong></td>
+                <td>특별한 경우 제외 권장 안 함</td>
+                <td>원래 날짜인 평달에 수행</td>
+            </tr>
+            <tr>
+                <td><strong>산소 이장</strong></td>
+                <td>매우 권장 (탈이 없음)</td>
+                <td>신중한 날짜 선택 필요</td>
+            </tr>
+            <tr>
+                <td><strong>수의 제작</strong></td>
+                <td>효도 선물로 최고의 시기</td>
+                <td>일반 시기</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>절기와 윤달의 관계</h3>
+    <p>우리 선조들은 윤달을 정할 때 24절기를 매우 중요하게 여겼습니다.<br>
+        절기에는 '절기'와 '중기'가 있는데, 달의 주기에 중기가 들어가지 않는 달을 윤달로 삼았습니다.
+        <br>이는 농경 사회에서 계절의 변화를 정확히 읽어내기 위한 고도의 수학적 장치였습니다.</p>
 
     <h2>3. 자주 묻는 질문 (FAQ)</h2>
     <div class="faq-section">
         <div class="faq-item">
-            <span class="faq-q">Q. 윤달은 정확히 몇 년마다 돌아오나요?</span>
-            <span class="faq-a">A. 보통 19년 동안 7번의 윤달이 돌아옵니다.
-                <br/>대략 2.7년(약 33개월)에 한 번씩 들어온다고 생각하시면 됩니다.</span>
+            <span class="faq-q">윤달은 언제 생기나요? 규칙이 있나요?</span>
+            <span class="faq-a">보통 '19년 7윤법'이라 하여 19년 동안 7번의 윤달을 넣습니다.<br>
+                연도로 치면 약 2.7년에 한 번꼴입니다.</span>
         </div>
         <div class="faq-item">
-            <span class="faq-q">Q. 윤달 생일인 사람은 생일을 언제 챙기나요?</span>
-            <span class="faq-a">A. 관습적으로 윤달이 아닌 '평달'의 같은 날짜에 생일을 챙깁니다.
-                <br/>윤달이 돌아오는 해에만 특별히 두 번 챙기기도 합니다.</span>
+            <span class="faq-q">윤달에 제사를 지내면 조상이 못 오시나요?</span>
+            <span class="faq-a">민속학적으로 윤달은 '없는 달'로 치기 때문에 조상님들이 제삿날을 찾지 못한다는 속설이 있습니다.<br>
+                그래서 원래 돌아가신 날인 평달에 지내는 것이 일반적입니다.</span>
         </div>
         <div class="faq-item">
-            <span class="faq-q">Q. 중요한 행사를 잡을 때 평달/윤달 구분이 필수인가요?</span>
-            <span class="faq-a">A. 네, 특히 이사나 산소 이장 등 민속 풍습과 관련된 일이라면 윤달 여부를 확인하는 것이 전통적인 예절에 부합합니다.</span>
+            <span class="faq-q">윤달 생일은 4년마다 챙겨야 하나요?</span>
+            <span class="faq-a">양력 윤달(2월 29일)은 4년마다 오지만, 음력 윤달은 주기가 다릅니다.<br>
+                평소에는 평달 생일을 챙기시고, 윤달이 돌아오는 해에만 기분 좋게 생일을 한 번 더 챙기는 분들도 많습니다.</span>
+        </div>
+        <div class="faq-item">
+            <span class="faq-q">올해의 정확한 윤달 시기를 알려주세요.</span>
+            <span class="faq-a">매년 윤달의 위치(윤 2월, 윤 5월 등)가 달라집니다.<br>
+                이는 전문 역법 데이터가 필요하므로 하단의 계산기를 통해 해당 연도를 직접 입력해 보시는 것이 가장 정확합니다.</span>
         </div>
     </div>
 
     <!-- 하단 푸터 박스 -->
     <div class="footer-cta">
-        <h3 style="color: white; margin-top: 0;">스마트하게 날짜 관리하세요!</h3>
-        <p>복잡한 음력 계산, 이제 직접 계산하지 마세요.<br>스마트한 계산기가 평달과 윤달을 정확하게 판별해 드립니다.</p>
+        <h2 style="color: white; border: none; margin-top: 0; padding: 0;">스마트한 일정 관리의 시작</h2>
+        <p style="opacity: 0.9;">중요한 이사, 부모님 생신, 집안 대소사를 놓치지 마세요.
         <a href="https://sangdammoa.com/calculator/lunar-leap" target="_blank" class="footer-btn">
-            🔍 내 일정 평달/윤달 확인하기
+            🔍 평달/윤달 무료 계산 서비스 바로가기
         </a>
         <br>
-        <small style="display: block; margin-top: 15px; color: #bdc3c7;">링크: https://sangdammoa.com/calculator/lunar-leap</small>
+        <small style="display: block; margin-top: 20px; color: #94a3b8; font-size: 0.85em;">
+            공식 도구: https://sangdammoa.com/calculator/lunar-leap
+        </small>
     </div>
 </div>
 
